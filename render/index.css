@@ -1,0 +1,101 @@
+body {
+  font-weight:bold;
+  width:1438px;
+  height:808px;
+  background-image:url("//i.imgur.com/HiRjbEx.png");
+  background-repeat:no-repeat;
+  position:relative;
+}
+
+.review {
+  width:438px;
+  height:192px;
+  position:absolute;
+  overflow:hidden;
+}
+
+.review p {
+  z-index:1;
+  margin:2 20;
+  line-height:1.8em;
+  font-size:22px;
+}
+
+h2.score {
+  z-index:-1;
+  text-align:center;
+  width:438px;
+  height:350px;
+  line-height:350px;
+  position:absolute;
+  font-size:256px;
+  color:rgba(37,123,171,0.6);
+  /*background:rgba(255,0,0,0.2);*/
+}
+
+h2.score[data-value="10"] {
+  transform:scale(0.75,1);
+}
+
+.score.akari {
+  left:277px;
+  top:50px;
+}
+.review.akari {
+  left:277px;
+  top:106px;
+}
+
+.score.chinatsu {
+  left:723px;
+  top:50px;
+}
+.review.chinatsu {
+  left:723px;
+  top:106px;
+}
+
+.score.kyoko {
+  left:277px;
+  top:407px;
+}
+.review.kyoko {
+  left:277px;
+  top:506px;
+}
+
+.score.yui {
+  left:723px;
+  top:407px;
+}
+.review.yui {
+  left:723px;
+  top:506px;
+}
+
+.item {
+  z-index:2;
+  position:absolute;
+  left:575px;
+  width:289px;
+  text-align:center;
+}
+
+.image.item {
+  top:302px;
+  height:170px;
+}
+
+.image.item > img {
+  max-width:289px;
+  height:170px;
+}
+
+.title.item {
+  font-size:20px;
+  color:rgba(37,123,171,1);
+  text-shadow:1px 0px #fff, 0px 1px #fff, -1px 0px #fff, 0px -1px #fff, 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff;
+  top:472px;
+  height:33px;
+  line-height:33px;
+}
