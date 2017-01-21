@@ -57,6 +57,19 @@ document.addEventListener('DOMContentLoaded',function(){
       document.querySelector("iframe").setAttribute("src",url);
     });
   });
+  document.getElementById('clear').addEventListener('click',function(e){
+    if(confirm("フォームの内容を全てクリアしますか？")){
+      document.querySelectorAll("[name]").forEach(function(n){
+        n.value = "";
+      });
+      document.querySelectorAll("select[name]").forEach(function(n){
+        n.value = 0;
+      });
+      ii = "";
+      url = gen_url();
+      document.querySelector("iframe").setAttribute("src",url);
+    }
+  });
   document.getElementById('reflesh').addEventListener('click',function(e){
     url = gen_url();
     document.querySelector("iframe").setAttribute("src",url);
