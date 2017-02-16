@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <title>ゆるゆりクロスレビュージェネレータ</title>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
@@ -6,6 +7,7 @@
   <script src="base64.js"></script>
   <script src="index.js"></script>
 </head>
+
 <body>
   <h1>ゆるゆりクロスレビュージェネレータ</h1>
   <div>
@@ -13,11 +15,16 @@
   </div>
   <div>
     <table>
-    <tr><th colspan="2"><button id="reflesh">更新</button><button id="open">開く</button></th></tr>
-    <tr><th>あかり</th><th>ちなつ</th></tr>
-    <tr>
-      <td>
-        <select name="as">
+      <tr>
+        <th colspan="2"><button id="reflesh">更新</button><button id="open">開く</button></th>
+      </tr>
+      <tr>
+        <th>あかり</th>
+        <th>ちなつ</th>
+      </tr>
+      <tr>
+        <td>
+          <select name="as">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -30,9 +37,9 @@
           <option>9</option>
           <option>10</option>
         </select>点
-      </td>
-      <td>
-        <select name="cs">
+        </td>
+        <td>
+          <select name="cs">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -45,20 +52,23 @@
           <option>9</option>
           <option>10</option>
         </select>点
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <textarea rows="8" cols="30" name="ar"></textarea>
-      </td>
-      <td>
-        <textarea rows="8" cols="30" name="cr"></textarea>
-      </td>
-    </tr>
-    <tr><th>京子</th><th>結衣</th></tr>
-    <tr>
-      <td>
-        <select name="ks">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea rows="8" cols="30" name="ar"></textarea>
+        </td>
+        <td>
+          <textarea rows="8" cols="30" name="cr"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th>京子</th>
+        <th>結衣</th>
+      </tr>
+      <tr>
+        <td>
+          <select name="ks">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -71,9 +81,9 @@
           <option>9</option>
           <option>10</option>
         </select>点
-      </td>
-      <td>
-        <select name="ys">
+        </td>
+        <td>
+          <select name="ys">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -86,22 +96,34 @@
           <option>9</option>
           <option>10</option>
         </select>点
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <textarea rows="8" cols="30" name="kr"></textarea>
-      </td>
-      <td>
-        <textarea rows="8" cols="30" name="yr"></textarea>
-      </td>
-    </tr>
-    <tr><th colspan="2">レビュー対象名</th></tr>
-    <tr><td colspan="2"><input name="it" value=""></td></tr>
-    <tr><th colspan="2">レビュー対象画像</th></tr>
-    <tr><td colspan="2"><input id="ii" type="file"></td></tr>
-    <tr><th colspan="2"><button id="clear">クリア</button></th></tr>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea rows="8" cols="30" name="kr"></textarea>
+        </td>
+        <td>
+          <textarea rows="8" cols="30" name="yr"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">レビュー対象名</th>
+      </tr>
+      <tr>
+        <td colspan="2"><input name="it" value=""></td>
+      </tr>
+      <tr>
+        <th colspan="2">レビュー対象画像</th>
+      </tr>
+      <!--<tr><td colspan="2"><input id="ii" type="file"></td></tr>-->
+      <tr>
+        <td colspan="2"><input id="ii" type="text"></td>
+      </tr>
+      <tr>
+        <th colspan="2"><button id="clear">クリア</button></th>
+      </tr>
     </table>
   </div>
 </body>
+
 </html>
