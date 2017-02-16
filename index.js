@@ -40,6 +40,7 @@ function build_sample(sample){
     }
     if(k == "ii"){
       ii = v;
+      document.getElementById('ii').value = v;
     }
   }
   url = gen_url();
@@ -49,6 +50,7 @@ function build_sample(sample){
 document.addEventListener('DOMContentLoaded',function(){
   load_sample();
   document.getElementById('ii').addEventListener('change',function(e){
+    /*
     var file = e.target.files[0];
     makeRequestBase64(file,function(err, result){
       ii = "data:"+result;
@@ -56,6 +58,8 @@ document.addEventListener('DOMContentLoaded',function(){
       url = gen_url();
       document.querySelector("iframe").setAttribute("src",url);
     });
+    */
+    ii = document.getElementById('ii').value;
   });
   document.getElementById('clear').addEventListener('click',function(e){
     if(confirm("フォームの内容を全てクリアしますか？")){
